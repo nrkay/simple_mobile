@@ -13,11 +13,11 @@ class MainActivity : AppCompatActivity() {
 
         val inputText = findViewById<EditText>(R.id.inputText)
         val btnClick = findViewById<Button>(R.id.btnClick)
-        val output = findViewById<TextView>(R.id.output)
-
+        var num = 0
         btnClick.setOnClickListener{
             val name = inputText.text.toString()
-            output.text = name
+            num++
+            inputText.setText("Jumlah Click : $num")
         }
     }
 }
