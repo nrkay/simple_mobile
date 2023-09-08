@@ -10,14 +10,20 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        val input1 = findViewById<EditText>(R.id.inputPertama)
+        val input2 = findViewById<EditText>(R.id.inputKedua)
+        val btn = findViewById<Button>(R.id.btn)
+        val hasil = findViewById<TextView>(R.id.hasil)
 
-        val inputText = findViewById<EditText>(R.id.inputText)
-        val btnClick = findViewById<Button>(R.id.btnClick)
-        var num = 0
-        btnClick.setOnClickListener{
-            val name = inputText.text.toString()
-            num++
-            inputText.setText("Jumlah Click : $num")
+
+
+        btn.setOnClickListener{
+            val bil1 = input1.text.toString().toInt()
+            val bil2 = input2.text.toString().toInt()
+            val hasilPenjumlahan = bil1 + bil2
+            hasil.text = hasilPenjumlahan.toString()
         }
+
+
     }
 }

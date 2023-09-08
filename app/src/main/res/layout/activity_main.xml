@@ -6,26 +6,60 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/inputText"
+    <LinearLayout
+        android:id="@+id/section1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Jumlah Click : "
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"/>
-    <Button
-        android:id="@+id/btnClick"
+        app:layout_constraintLeft_toLeftOf="parent"
+        >
+        <EditText
+            android:id="@+id/inputPertama"
+            android:hint="Angka Pertama"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+           />
+        <EditText
+            android:id="@+id/inputKedua"
+            android:hint="Angka Kedua"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/section2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/black"
-        android:text="Click Here"
-        android:textColor="#FFFFFF"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/section1"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/inputText"
-        />
+        >
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Jumlahkan"
+            android:background="@color/black"
+            android:textColor="@color/white"
+            android:layout_marginRight="25dp"/>
+
+
+        <TextView
+            android:id="@+id/hasil"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+
+
+
 
 
 
