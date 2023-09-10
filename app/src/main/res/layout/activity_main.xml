@@ -14,82 +14,16 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         android:orientation="vertical">
-        <TextView
-            android:id="@+id/title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Pilihan Menu"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" />
-        <RadioGroup
-            android:id="@+id/radioGroupMenu"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/title"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-
-            >
-            <RadioButton
-                android:id="@+id/menuNasiGoreng"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Nasi Goreng"
-                />
-            <RadioButton
-                android:id="@+id/menuMieAyam"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Mie Ayam" />
-        </RadioGroup>
-        <TextView
-            android:id="@+id/teksMinuman"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Pilihan Menu Minuman :"
-            app:layout_constraintTop_toBottomOf="@+id/radioGroupMenu"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
-        <LinearLayout
-            android:id="@+id/minuman"
-            android:orientation="vertical"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/teksMinuman"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent">
-            <CheckBox
-                android:id="@+id/minumJus"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Juss"/>
-            <CheckBox
-                android:id="@+id/minumCoffee"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Coffee"/>
-            <CheckBox
-                android:id="@+id/minumMineral"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Mineral"/>
-
-        </LinearLayout>
-
         <Button
-            android:id="@+id/btnCheckOut"
-            android:text="Pesan"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <TextView
-            android:id="@+id/result"
+            android:id="@+id/btnToast"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
+            android:text="Text Toast" />
+        <Button
+            android:id="@+id/templateToast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Template Toast"
             />
     </LinearLayout>
 
